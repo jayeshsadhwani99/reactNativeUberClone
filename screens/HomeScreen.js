@@ -43,12 +43,13 @@ const HomeScreen = () => {
 
             dispatch(setDestination(null));
           }}
+          onFail={error => console.error(error)}
           fetchDetails={true}
           returnKeyType={'search'}
           enablePoweredByContainer={false}
           minLength={2}
           query={{
-            key: GOOGLE_MAPS_APIKEY,
+            key: 'AIzaSyBrbG6y6iLhVIGeQMfMf2UiJFx57btJClQ',
             language: 'en',
           }}
           nearbyPlacesAPI="GooglePlacesSearch"
